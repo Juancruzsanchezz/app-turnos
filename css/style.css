@@ -21,7 +21,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   background-color: #262438;
@@ -461,6 +462,13 @@ h1 {
 .container_input .input:valid ~ .label_input svg path,
 .container_input .input:focus ~ .label_input svg path {
   fill: #d7db4d;
+}
+
+.weight-balance {
+  fill: #d7db4d;
+}
+.weight-balance path {
+  fill: transparent !important;
 }
 
 .notification {

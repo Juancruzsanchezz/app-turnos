@@ -1,4 +1,5 @@
-import { getUserGymName, updateUserInterface } from "./users.js";
+import { getUserGymName } from "./users.js";
+import { noficationPopUp } from "./notification.js";
 export { updateGyms, saveUserGymName };
 const urlGyms = "public/gyms.json";
 let gyms = [];
@@ -37,13 +38,17 @@ function updateGyms() {
 
 function saveUserGymName () {
     const place = document.querySelectorAll(".place");
-    let userSelectsGym = false;
 
     place.forEach(gymSelected => {  
         gymSelected.addEventListener("click", () => {   
             let gymName = gymSelected.value;
             getUserGymName(gymName);
-            updateUserInterface();
+            
+            noficationPopUp("¡selected gym!");
+
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
         })
     });
 }

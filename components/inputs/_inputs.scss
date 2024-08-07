@@ -51,3 +51,11 @@
 .container_input .input:focus ~ .label_input svg path {
     fill: #d7db4d;
 }
+
+.weight-balance { 
+  fill: #d7db4d;
+
+  path {  
+    fill: transparent !important;
+  }
+}

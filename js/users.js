@@ -1,5 +1,4 @@
 import { USER_KEY } from "./app.js";
-import { saveUserGymName } from "./gyms.js"; 
 export { user, getUserGymName, updateUserInterface };
 
 const urlUsers = "public/users.json";
@@ -47,31 +46,31 @@ function getUserGymName(gymName) {
     return true;
 }
 
-let iconGym = document.getElementById("icon_gym");
-let userName = document.getElementById("user_name");
-let gymNameInterface = document.getElementById("gym_name");
 
 function updateUserInterface() {   
-
     let userSession = JSON.parse(localStorage.getItem(USER_KEY));
-    let urlImgGym = searchUrlGym(userSession);
 
-    iconGym.setAttribute('src', `${urlImgGym}`);
-    userName.textContent = userSession.firstName;
-    gymNameInterface.textContent = userSession.gymName;
+    let iconGym = document.getElementById("icon_gym");
+    searchUrlGym(userSession, iconGym);
 
-    // setTimeout(() => {
-    //     window.location.reload();
-    // }, 1000);
+    let userName = document.querySelectorAll(".user_name");
+    let gymNameInterface = document.querySelectorAll(".gym_name");
+
+    userName.forEach(elem => {  
+        elem.textContent = userSession.firstName;
+    });
+
+    gymNameInterface.forEach(elem => {  
+        elem.textContent = userSession.gymName;
+    });
 } 
 
-function searchUrlGym(userSession) {   
+function searchUrlGym(userSession, iconGym) {   
     let gyms = JSON.parse(localStorage.getItem("gyms"));
-
+        
     gyms.forEach(gym => {   
         if (userSession.gymName === gym.gymName) { 
-            console.log(gym.gymImageUrl);
-            return gym.gymImageUrl;
+            iconGym.setAttribute('src', `${gym.gymImageUrl}`);
         }
     });
 }

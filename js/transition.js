@@ -46,9 +46,7 @@ navIcons.forEach(icon => {
         icon.classList.add("active");
         let valueTranslate = icon.value * 100;
         navMarker.style.transform = `translateX(${valueTranslate}%)`;
-
-        console.log(icon.value);
-        console.log(allUserinterface);
+        
         allUserinterface.forEach(userInterface => { 
             userInterface.style.transform = 'translateX(-100%)';
             userInterface.style.left = '0';
