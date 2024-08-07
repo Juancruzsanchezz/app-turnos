@@ -1,19 +1,19 @@
 {   
     "gyms": [   
         {   "gymName": "body-flex",
-            "gymImageUrl": "/assets/img/gyms/body-flex.png"
+            "gymImageUrl": "./assets/img/gyms/body-flex.png"
         },
         {   
             "gymName": "golds-gym",
-            "gymImageUrl": "/assets/img/gyms/golds-gym.png"
+            "gymImageUrl": "./assets/img/gyms/golds-gym.png"
         },
         {   
             "gymName": "makfit",
-            "gymImageUrl": "/assets/img/gyms/makfit.png"
+            "gymImageUrl": "./assets/img/gyms/makfit.png"
         },
         {   
             "gymName": "power-gym",
-            "gymImageUrl": "/assets/img/gyms/power-gym.png"
+            "gymImageUrl": "./assets/img/gyms/power-gym.png"
         }
     ]
 }

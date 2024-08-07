@@ -5,11 +5,11 @@ export { USER_KEY };
 const USER_KEY = 'userSession';
 const userSession = JSON.parse(localStorage.getItem(USER_KEY)) || false;
 
-function app(session) { 
-  if (session) {  
+function app(user) { 
+  if (user) {  
     sideWays(slideStart, slideSelectPlace);
 
-    if (userSession.gymName) {
+    if (user.gymName) {
       sideWays(slideSelectPlace, slideUserInterface);
     } else {  
       updateGyms();
