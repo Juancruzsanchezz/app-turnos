@@ -1,0 +1,265 @@
+{
+  "users": [
+    {
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "userType": "regular",
+      "firstName": "John",
+      "lastName": "Doe",
+      "dni": "12345678",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111111",
+        "expiryDate": "12/2024",
+        "cvv": "123"
+      },
+      "username": "john_doe",
+      "gymName": null
+    },
+    {
+      "email": "jane.smith@example.com",
+      "password": "securePass!2024",
+      "userType": "regular",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "dni": "87654321",
+      "paymentMethod": "paypal",
+      "username": "jane_smith",
+      "gymName": null
+    },
+    {
+      "email": "alice.johnson@example.com",
+      "password": "alice2024pass",
+      "userType": "regular",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "dni": "23456789",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "5500000000000004",
+        "expiryDate": "11/2025",
+        "cvv": "456"
+      },
+      "username": "alice_johnson",
+      "gymName": null
+    },
+    {
+      "email": "bob.brown@example.com",
+      "password": "bobsecure456",
+      "userType": "regular",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "dni": "34567890",
+      "paymentMethod": "paypal",
+      "username": "bob_brown",
+      "gymName": null
+    },
+    {
+      "email": "charlie.davis@example.com",
+      "password": "charlie789!",
+      "userType": "regular",
+      "firstName": "Charlie",
+      "lastName": "Davis",
+      "dni": "45678901",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111112",
+        "expiryDate": "10/2024",
+        "cvv": "789"
+      },
+      "username": "charlie_davis",
+      "gymName": null
+    },
+    {
+      "email": "david.miller@example.com",
+      "password": "davidMiller2024",
+      "userType": "regular",
+      "firstName": "David",
+      "lastName": "Miller",
+      "dni": "56789012",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111113",
+        "expiryDate": "09/2024",
+        "cvv": "321"
+      },
+      "username": "david_miller",
+      "gymName": null
+    },
+    {
+      "email": "emma.wilson@example.com",
+      "password": "emmaPass2024",
+      "userType": "regular",
+      "firstName": "Emma",
+      "lastName": "Wilson",
+      "dni": "67890123",
+      "paymentMethod": "paypal",
+      "username": "emma_wilson",
+      "gymName": null
+    },
+    {
+      "email": "frank.moore@example.com",
+      "password": "frank1234!",
+      "userType": "superuser",
+      "firstName": "Frank",
+      "lastName": "Moore",
+      "dni": "78901234",
+      "paymentMethod": null,
+      "creditCard": null,
+      "username": "frank_moore",
+      "gymName": "power-gym"
+    },
+    {
+      "email": "grace.taylor@example.com",
+      "password": "grace2024!",
+      "userType": "regular",
+      "firstName": "Grace",
+      "lastName": "Taylor",
+      "dni": "89012345",
+      "paymentMethod": "paypal",
+      "username": "grace_taylor",
+      "gymName": null
+    },
+    {
+      "email": "henry.anderson@example.com",
+      "password": "henryPass2024",
+      "userType": "superuser",
+      "firstName": "Henry",
+      "lastName": "Anderson",
+      "dni": "90123456",
+      "paymentMethod": null,
+      "creditCard": null,
+      "username": "henry_anderson",
+      "gymName": "golds-gym"
+    },
+    {
+      "email": "isabella.martinez@example.com",
+      "password": "isabella2024!",
+      "userType": "regular",
+      "firstName": "Isabella",
+      "lastName": "Martinez",
+      "dni": "01234567",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111116",
+        "expiryDate": "06/2024",
+        "cvv": "432"
+      },
+      "username": "isabella_martinez",
+      "gymName": null
+    },
+    {
+      "email": "jack.thomas@example.com",
+      "password": "jackPass123",
+      "userType": "regular",
+      "firstName": "Jack",
+      "lastName": "Thomas",
+      "dni": "12345679",
+      "paymentMethod": "paypal",
+      "username": "jack_thomas",
+      "gymName": null
+    },
+    {
+      "email": "karen.jackson@example.com",
+      "password": "karen2024pass",
+      "userType": "regular",
+      "firstName": "Karen",
+      "lastName": "Jackson",
+      "dni": "23456780",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111117",
+        "expiryDate": "05/2024",
+        "cvv": "543"
+      },
+      "username": "karen_jackson",
+      "gymName": null
+    },
+    {
+      "email": "linda.white@example.com",
+      "password": "lindaWhite2024",
+      "userType": "regular",
+      "firstName": "Linda",
+      "lastName": "White",
+      "dni": "34567891",
+      "paymentMethod": "paypal",
+      "username": "linda_white",
+      "gymName": null
+    },
+    {
+      "email": "michael.harris@example.com",
+      "password": "michael1234",
+      "userType": "regular",
+      "firstName": "Michael",
+      "lastName": "Harris",
+      "dni": "45678902",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111118",
+        "expiryDate": "04/2024",
+        "cvv": "654"
+      },
+      "username": "michael_harris",
+      "gymName": null
+    },
+    {
+      "email": "nora.martin@example.com",
+      "password": "nora2024secure",
+      "userType": "regular",
+      "firstName": "Nora",
+      "lastName": "Martin",
+      "dni": "56789023",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111119",
+        "expiryDate": "03/2024",
+        "cvv": "765"
+      },
+      "username": "nora_martin",
+      "gymName": null
+    },
+    {
+      "email": "olivia.clark@example.com",
+      "password": "oliviaPass123",
+      "userType": "regular",
+      "firstName": "Olivia",
+      "lastName": "Clark",
+      "dni": "67890124",
+      "paymentMethod": "paypal",
+      "username": "olivia_clark",
+      "gymName": null
+    },
+    {
+      "email": "paul.lee@example.com",
+      "password": "paul2024!",
+      "userType": "regular",
+      "firstName": "Paul",
+      "lastName": "Lee",
+      "dni": "78901235",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111120",
+        "expiryDate": "02/2024",
+        "cvv": "876"
+      },
+      "username": "paul_lee",
+      "gymName": null
+    },
+    {
+      "email": "quinn.walker@example.com",
+      "password": "quinnSecure!",
+      "userType": "regular",
+      "firstName": "Quinn",
+      "lastName": "Walker",
+      "dni": "89012346",
+      "paymentMethod": "credit_card",
+      "creditCard": {
+        "cardNumber": "4111111111111121",
+        "expiryDate": "01/2024",
+        "cvv": "987"
+      },
+      "username": "quinn_walker",
+      "gymName": null
+    }
+  ]
+}

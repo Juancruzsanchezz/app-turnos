@@ -1,0 +1,14 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import "../components/sliders/sliders";
+@import "../components/buttons/buttons";
+@import "../components/inputs/inputs";      
+@import "../components/notification/notification";
+@import "../components/nav/nav";
+@import "../components/loader/loader";

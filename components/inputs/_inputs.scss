@@ -1,0 +1,53 @@
+/* From Uiverse.io by AmIt-DasIT */ 
+.container_input {
+    position: relative;
+}
+  
+  .container_input .label_input {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .container_input .input {
+    width: 350px;
+    height: 60px;
+    padding: 0px 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #d7db4d;
+    outline: none;
+  }
+    
+  .container_input .input:valid ~ .label_input,
+  .container_input .input:focus ~ .label_input {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 4px;
+    color: #d7db4d;
+    background-color: #262438;
+  }
+
+.container_input .label_input svg { 
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.container_input .label_input svg path { 
+    fill: #fff;
+}
+
+.container_input .input:valid ~ .label_input svg path,
+.container_input .input:focus ~ .label_input svg path {
+    fill: #d7db4d;
+}

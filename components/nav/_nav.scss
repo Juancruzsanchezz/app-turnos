@@ -1,0 +1,67 @@
+.interface_nav {    
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #262438;
+    box-shadow: 0px -5px 10px -4px rgb(25, 25, 28);
+
+    ul {    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+
+        li {    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 33.3333333333%;
+            padding: 10px;
+            gap: 5px;
+            transition: all .5s;
+
+            svg {   
+                width:35px ;
+                height:35px ;
+
+                path {  
+                    fill: #fff;
+                }
+            }
+
+            p { 
+                font-size: 12px;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+
+        li.active { 
+            svg path{   
+                fill: #d7db4d;
+            }
+        }
+    }
+
+    .marker {   
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 33.3333333333%;
+        bottom: 0;
+        transform: translateX(100%);
+        transition: all .5s;
+
+        .marker_bar {
+            width: 80px;
+            height: 4px;   
+            border-radius: 30px;
+            background-color: #d7db4d;
+        }
+    }
+}
