@@ -1,4 +1,4 @@
-export { slideSelectPlace, slideUserInterface, slideStart, sideWays };
+export { slideSelectPlace, slideUserInterface, slideStart, sideWays, showNavBar };
 
 const slideStart = document.getElementById("slide_start");
 const slideSingIn = document.getElementById("slide_sing_in");
@@ -46,7 +46,7 @@ navIcons.forEach(icon => {
         icon.classList.add("active");
         let valueTranslate = icon.value * 100;
         navMarker.style.transform = `translateX(${valueTranslate}%)`;
-        
+
         allUserinterface.forEach(userInterface => { 
             userInterface.style.transform = 'translateX(-100%)';
             userInterface.style.left = '0';
@@ -56,3 +56,8 @@ navIcons.forEach(icon => {
         allUserinterface[icon.value].style.left = '50%';
     });
 });
+
+function showNavBar() {  
+    let nav = document.getElementById("nav");
+    nav.classList.add("active");
+}

@@ -504,10 +504,14 @@ h1 {
   color: #262438;
 }
 
-.interface_nav {
+.interface_nav.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.interface_nav {
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

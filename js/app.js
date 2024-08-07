@@ -1,4 +1,4 @@
-import { slideSelectPlace, slideUserInterface, slideStart, sideWays } from "./transition.js";
+import { slideSelectPlace, slideUserInterface, slideStart, sideWays, showNavBar } from "./transition.js";
 import { updateGyms, saveUserGymName } from "./gyms.js";
 import { updateUserInterface } from "./users.js";
 export { USER_KEY };
@@ -12,7 +12,7 @@ function app(session) {
     updateUserInterface();
     if (userSession.gymName) {
       sideWays(slideSelectPlace, slideUserInterface);
-
+      showNavBar();
     } else {  
       updateGyms();
       saveUserGymName();

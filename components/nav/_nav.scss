@@ -1,5 +1,8 @@
-.interface_nav {    
+.interface_nav.active { 
     display: flex;
+}
+.interface_nav {    
+    display: none;
     align-items: center;
     position: fixed;
     bottom: 0;
