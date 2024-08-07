@@ -207,6 +207,7 @@ body {
           align-items: center;
   overflow-y: scroll;
   padding: 0 40px;
+  min-height: 800px;
 }
 .slider.user_interface main section.user_profile {
   -webkit-box-pack: start;
