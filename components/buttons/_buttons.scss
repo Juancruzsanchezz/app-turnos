@@ -32,7 +32,39 @@
 }
 
 .interface_primary_button { 
-    @include btn(340px, 65px, transparent, 2px solid #d7db4d, 10px);
+    @include btn(360px, 65px, transparent, 2px solid #d7db4d, 10px);
+    position: relative;
+    overflow: hidden;
+
+    article:has(> div) { 
+        padding-left: 105px;
+    }
+    article i { 
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+
+        svg {   
+            width: 25px;
+        }
+    }
+    article div {   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 80px;
+        background-color: #d7db4d;
+
+        p { 
+            font-weight: 800;
+            color: #27243a;
+        }
+    }
+    
     article {   
         display: flex;
         justify-content: flex-start;
@@ -60,7 +92,6 @@
 .interface_secundary_button { 
     @include btn(165px, 100px, transparent, 2px solid #d7db4d, 10px);
     padding: 10px 20px; 
-    
 
     h3 {    
         margin-bottom: 5px;

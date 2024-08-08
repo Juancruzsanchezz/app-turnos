@@ -1,19 +1,300 @@
-{   
-    "gyms": [   
-        {   "gymName": "body-flex",
-            "gymImageUrl": "./assets/img/gyms/body-flex.png"
+{
+    "gyms": [
+        {
+            "gymName": "body-flex",
+            "gymImageUrl": "./assets/img/gyms/body-flex.png",
+            "activities": [
+                {
+                    "name": "crossfit",
+                    "shifts": [
+                        {"time": "06:00", "availability": 15},
+                        {"time": "07:00", "availability": 10},
+                        {"time": "08:00", "availability": 20},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 12},
+                        {"time": "12:00", "availability": 18},
+                        {"time": "13:00", "availability": 0},
+                        {"time": "14:00", "availability": 30},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 30},
+                        {"time": "17:00", "availability": 8}
+                    ]
+                },
+                {
+                    "name": "functional",
+                    "shifts": [
+                        {"time": "06:30", "availability": 20},
+                        {"time": "07:30", "availability": 5},
+                        {"time": "08:30", "availability": 10},
+                        {"time": "09:30", "availability": 15},
+                        {"time": "10:30", "availability": 25},
+                        {"time": "11:30", "availability": 8},
+                        {"time": "12:30", "availability": 12},
+                        {"time": "13:30", "availability": 7},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 20},
+                        {"time": "16:30", "availability": 3},
+                        {"time": "17:30", "availability": 28}
+                    ]
+                },
+                {
+                    "name": "fitness",
+                    "shifts": [
+                        {"time": "06:00", "availability": 10},
+                        {"time": "07:00", "availability": 20},
+                        {"time": "08:00", "availability": 15},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 30},
+                        {"time": "12:00", "availability": 8},
+                        {"time": "13:00", "availability": 12},
+                        {"time": "14:00", "availability": 7},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 18},
+                        {"time": "17:00", "availability": 9}
+                    ]
+                },
+                {
+                    "name": "yoga",
+                    "shifts": [
+                        {"time": "06:30", "availability": 15},
+                        {"time": "07:30", "availability": 10},
+                        {"time": "08:30", "availability": 20},
+                        {"time": "09:30", "availability": 25},
+                        {"time": "10:30", "availability": 5},
+                        {"time": "11:30", "availability": 12},
+                        {"time": "12:30", "availability": 18},
+                        {"time": "13:30", "availability": 0},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 22},
+                        {"time": "16:30", "availability": 30},
+                        {"time": "17:30", "availability": 8}
+                    ]
+                }
+            ]
         },
-        {   
+        {
             "gymName": "golds-gym",
-            "gymImageUrl": "./assets/img/gyms/golds-gym.png"
+            "gymImageUrl": "./assets/img/gyms/golds-gym.png",
+            "activities": [
+                {
+                    "name": "crossfit",
+                    "shifts": [
+                        {"time": "06:00", "availability": 15},
+                        {"time": "07:00", "availability": 10},
+                        {"time": "08:00", "availability": 20},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 12},
+                        {"time": "12:00", "availability": 18},
+                        {"time": "13:00", "availability": 0},
+                        {"time": "14:00", "availability": 30},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 30},
+                        {"time": "17:00", "availability": 8}
+                    ]
+                },
+                {
+                    "name": "spinning",
+                    "shifts": [
+                        {"time": "06:30", "availability": 20},
+                        {"time": "07:30", "availability": 5},
+                        {"time": "08:30", "availability": 10},
+                        {"time": "09:30", "availability": 15},
+                        {"time": "10:30", "availability": 25},
+                        {"time": "11:30", "availability": 8},
+                        {"time": "12:30", "availability": 12},
+                        {"time": "13:30", "availability": 7},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 20},
+                        {"time": "16:30", "availability": 3},
+                        {"time": "17:30", "availability": 28}
+                    ]
+                },
+                {
+                    "name": "fitness",
+                    "shifts": [
+                        {"time": "06:00", "availability": 10},
+                        {"time": "07:00", "availability": 20},
+                        {"time": "08:00", "availability": 15},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 30},
+                        {"time": "12:00", "availability": 8},
+                        {"time": "13:00", "availability": 12},
+                        {"time": "14:00", "availability": 7},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 18},
+                        {"time": "17:00", "availability": 9}
+                    ]
+                },
+                {
+                    "name": "yoga",
+                    "shifts": [
+                        {"time": "06:30", "availability": 15},
+                        {"time": "07:30", "availability": 10},
+                        {"time": "08:30", "availability": 20},
+                        {"time": "09:30", "availability": 25},
+                        {"time": "10:30", "availability": 5},
+                        {"time": "11:30", "availability": 12},
+                        {"time": "12:30", "availability": 18},
+                        {"time": "13:30", "availability": 0},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 22},
+                        {"time": "16:30", "availability": 30},
+                        {"time": "17:30", "availability": 8}
+                    ]
+                }
+            ]
         },
-        {   
+        {
             "gymName": "makfit",
-            "gymImageUrl": "./assets/img/gyms/makfit.png"
+            "gymImageUrl": "./assets/img/gyms/makfit.png",
+            "activities": [
+                {
+                    "name": "crossfit",
+                    "shifts": [
+                        {"time": "06:00", "availability": 15},
+                        {"time": "07:00", "availability": 10},
+                        {"time": "08:00", "availability": 20},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 12},
+                        {"time": "12:00", "availability": 18},
+                        {"time": "13:00", "availability": 0},
+                        {"time": "14:00", "availability": 30},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 30},
+                        {"time": "17:00", "availability": 8}
+                    ]
+                },
+                {
+                    "name": "functional",
+                    "shifts": [
+                        {"time": "06:30", "availability": 20},
+                        {"time": "07:30", "availability": 5},
+                        {"time": "08:30", "availability": 10},
+                        {"time": "09:30", "availability": 15},
+                        {"time": "10:30", "availability": 25},
+                        {"time": "11:30", "availability": 8},
+                        {"time": "12:30", "availability": 12},
+                        {"time": "13:30", "availability": 7},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 20},
+                        {"time": "16:30", "availability": 3},
+                        {"time": "17:30", "availability": 28}
+                    ]
+                },
+                {
+                    "name": "fitness",
+                    "shifts": [
+                        {"time": "06:00", "availability": 10},
+                        {"time": "07:00", "availability": 20},
+                        {"time": "08:00", "availability": 15},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 30},
+                        {"time": "12:00", "availability": 8},
+                        {"time": "13:00", "availability": 12},
+                        {"time": "14:00", "availability": 7},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 18},
+                        {"time": "17:00", "availability": 9}
+                    ]
+                },
+                {
+                    "name": "box",
+                    "shifts": [
+                        {"time": "06:30", "availability": 15},
+                        {"time": "07:30", "availability": 10},
+                        {"time": "08:30", "availability": 20},
+                        {"time": "09:30", "availability": 25},
+                        {"time": "10:30", "availability": 5},
+                        {"time": "11:30", "availability": 12},
+                        {"time": "12:30", "availability": 18},
+                        {"time": "13:30", "availability": 0},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 22},
+                        {"time": "16:30", "availability": 30},
+                        {"time": "17:30", "availability": 8}
+                    ]
+                }
+            ]
         },
-        {   
+        {
             "gymName": "power-gym",
-            "gymImageUrl": "./assets/img/gyms/power-gym.png"
+            "gymImageUrl": "./assets/img/gyms/power-gym.png",
+            "activities": [
+                {
+                    "name": "crossfit",
+                    "shifts": [
+                        {"time": "06:00", "availability": 15},
+                        {"time": "07:00", "availability": 10},
+                        {"time": "08:00", "availability": 20},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 12},
+                        {"time": "12:00", "availability": 18},
+                        {"time": "13:00", "availability": 0},
+                        {"time": "14:00", "availability": 30},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 30},
+                        {"time": "17:00", "availability": 8}
+                    ]
+                },
+                {
+                    "name": "spinning",
+                    "shifts": [
+                        {"time": "06:30", "availability": 20},
+                        {"time": "07:30", "availability": 5},
+                        {"time": "08:30", "availability": 10},
+                        {"time": "09:30", "availability": 15},
+                        {"time": "10:30", "availability": 25},
+                        {"time": "11:30", "availability": 8},
+                        {"time": "12:30", "availability": 12},
+                        {"time": "13:30", "availability": 7},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 20},
+                        {"time": "16:30", "availability": 3},
+                        {"time": "17:30", "availability": 28}
+                    ]
+                },
+                {
+                    "name": "fitness",
+                    "shifts": [
+                        {"time": "06:00", "availability": 10},
+                        {"time": "07:00", "availability": 20},
+                        {"time": "08:00", "availability": 15},
+                        {"time": "09:00", "availability": 25},
+                        {"time": "10:00", "availability": 5},
+                        {"time": "11:00", "availability": 30},
+                        {"time": "12:00", "availability": 8},
+                        {"time": "13:00", "availability": 12},
+                        {"time": "14:00", "availability": 7},
+                        {"time": "15:00", "availability": 22},
+                        {"time": "16:00", "availability": 18},
+                        {"time": "17:00", "availability": 9}
+                    ]
+                },
+                {
+                    "name": "box",
+                    "shifts": [
+                        {"time": "06:30", "availability": 15},
+                        {"time": "07:30", "availability": 10},
+                        {"time": "08:30", "availability": 20},
+                        {"time": "09:30", "availability": 25},
+                        {"time": "10:30", "availability": 5},
+                        {"time": "11:30", "availability": 12},
+                        {"time": "12:30", "availability": 18},
+                        {"time": "13:30", "availability": 0},
+                        {"time": "14:30", "availability": 30},
+                        {"time": "15:30", "availability": 22},
+                        {"time": "16:30", "availability": 30},
+                        {"time": "17:30", "availability": 8}
+                    ]
+                }
+            ]
         }
     ]
 }

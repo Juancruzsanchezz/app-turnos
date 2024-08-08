@@ -1,3 +1,5 @@
+export { showLoader, hideLoader };
+
 window.addEventListener("DOMContentLoaded", () => { 
     showLoader();
 });

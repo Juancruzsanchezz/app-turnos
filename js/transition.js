@@ -1,4 +1,4 @@
-export { slideSelectPlace, slideUserInterface, slideStart, sideWays, showNavBar };
+export { slideSelectPlace, slideUserInterface, slideStart, sideWays, showNavBar, hiddenNavBar };
 
 const slideStart = document.getElementById("slide_start");
 const slideSingIn = document.getElementById("slide_sing_in");
@@ -61,3 +61,9 @@ function showNavBar() {
     let nav = document.getElementById("nav");
     nav.classList.add("active");
 }
+
+function hiddenNavBar() {  
+    let nav = document.getElementById("nav");
+    nav.classList.remove("active");
+}
+
