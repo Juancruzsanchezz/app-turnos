@@ -72,6 +72,9 @@ body {
 .slider .slider_header .slider_header_icon img.icon_gym {
   width: 60px;
 }
+.slider .slider_main.main_form {
+  position: unset;
+}
 .slider .slider_main {
   display: -webkit-box;
   display: -ms-flexbox;

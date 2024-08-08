@@ -52,6 +52,9 @@ body {
         }
 
     }
+    .slider_main.main_form {    
+        position: unset;
+    }
     .slider_main {  
         display: flex;
         flex-direction: column;
