@@ -86,7 +86,7 @@ function updateActivities() {
 
             activitiesOptions.forEach(option => {   
                 option.addEventListener("click", () =>{   
-                    newSection(gym.activities, option.value, slideSelectActivity);
+                    createShifts(gym.activities, option.value, slideSelectActivity);
                 });
             });
         }
@@ -99,7 +99,51 @@ btnNewReservation.addEventListener("click", () => {
     updateActivities();
 });
 
-function newSection(arrayContent, titleContent, slideBack) { 
+function reserveShift() {
+    document.querySelectorAll(".shift").forEach(shift => { 
+        shift.addEventListener("click", () => {    
+            if (localStorage.getItem("shifReserved")) { 
+                noficationPopUp("¡You already booked an appointment today!");
+            } else {    
+                let value = shift.value;
+                let valueElements = value.split(",");
+                
+                shift.style.transform = "translateX(-200%)";
+                setTimeout(() => {
+                    shift.parentElement.style.display = "none";
+                }, 200);
+
+                localStorage.setItem("shifReserved", JSON.stringify(value));
+
+                noficationPopUp("¡Reserved shift!");
+                deleteShift(valueElements);
+            }               
+        })
+    });
+}
+
+function deleteShift(shift) {    
+    let userSession = JSON.parse(localStorage.getItem(USER_KEY));
+    let gyms = JSON.parse(localStorage.getItem("gyms"));
+
+    console.log(gyms);
+    gyms.forEach(gym => {   
+        if (gym.gymName === userSession.gymName) { 
+            gym.activities.forEach(activity => {   
+                if (activity.name === shift[0]) {
+                    for (let i = 0; i < activity.shifts.length; i++) {
+                        if (activity.shifts[i].time === shift[1]) {
+                            activity.shifts.splice(i, 1);
+                            localStorage.setItem("gyms", JSON.stringify(gyms))
+                        }
+                    }
+                }
+            });
+        }
+    });
+}
+
+function createShifts(arrayContent, titleContent, slideBack) { 
     const sliderContainer = document.getElementById("slider");
     const slider = document.createElement("div");
     
@@ -118,7 +162,7 @@ function newSection(arrayContent, titleContent, slideBack) {
             </div>
         </header>
         <main class="slider_main" style="padding-bottom: 20%;">
-            <article class="select" id="select_content">    
+            <article class="select" id="select_content">  
             </article>
         </main>
     `;
@@ -126,7 +170,7 @@ function newSection(arrayContent, titleContent, slideBack) {
     setTimeout(() => {
         const selectContent = document.getElementById("select_content");
         document.getElementById("icon_back_section").addEventListener("click", () => {   
-            sideWays(sliderContainer, slideBack)
+            sideWays(sliderContainer, slideBack);
             slider.innerHTML = ``;
         })
         
@@ -135,16 +179,17 @@ function newSection(arrayContent, titleContent, slideBack) {
             arrayContent.forEach(activity => {  
                 if (activity.name === titleContent) { 
                     activity.shifts.forEach(shift => {
-                        const shifts = document.createElement("div");
+                        let shifts = document.createElement("div");
+
                         shifts.innerHTML = `    
-                            <button class="interface_primary_button">    
+                            <button class="interface_primary_button shift" value="${titleContent},${shift.time}">    
                                 <article>   
                                     <div>   
                                         <p> 
                                             ${shift.time}
                                         </p>
                                     </div>
-                                    <p>Disponible (${shift.availability})</p>
+                                    <p>Availability (${shift.availability})</p>
                                     <i> 
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="black"/>
@@ -161,6 +206,7 @@ function newSection(arrayContent, titleContent, slideBack) {
         }
         setTimeout(() => {
             searchNameKey();
+            reserveShift()
         }, 0);
     }, 0);
 
